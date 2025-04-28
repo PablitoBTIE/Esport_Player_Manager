@@ -65,3 +65,4 @@
 /home/iv_tie/Pulpit/pawel/pad(avalonia)/mvvmapki/Esport_Player_Manager1/Esport_Player_Manager/Esport_Player_Manager/obj/Debug/net9.0/Esport_P.CB99D639.Up2Date
 /home/iv_tie/Pulpit/pawel/pad(avalonia)/mvvmapki/Esport_Player_Manager1/Esport_Player_Manager/Esport_Player_Manager/obj/Debug/net9.0/Esport_Player_Manager.genruntimeconfig.cache
 /home/iv_tie/Pulpit/pawel/pad(avalonia)/mvvmapki/Esport_Player_Manager1/Esport_Player_Manager/Esport_Player_Manager/obj/Debug/net9.0/ref/Esport_Player_Manager.dll
+/home/iv_tie/Pulpit/pawel/pad(avalonia)/mvvmapki/Esport_Player_Manager1/Esport_Player_Manager/Esport_Player_Manager/obj/Debug/net9.0/Esport_Player_Manager.sourcelink.json

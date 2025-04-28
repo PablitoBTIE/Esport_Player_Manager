@@ -15,6 +15,64 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <StackPanel Margin="20">
+        
+        <TextBlock Text="E-Sport Player Manager"
+                   FontSize="20" HorizontalAlignment="Center"
+        />
+        
+        <TextBlock Text="Podaj imię zawodnika:" Margin="10, 30, 10, 0"/>
+        <TextBox Margin="10, 0, 10, 0"></TextBox>
+        
+        <TextBlock Text="Podaj pseudonim zawodnika:" Margin="10, 10, 10, 0"/>
+        <TextBox Margin="10, 0, 10, 0"></TextBox>
+        
+        <TextBlock Text="Podaj grę, w którą gra zawodnik:" Margin="10, 10, 10, 0"/>
+        <TextBox Margin="10, 0, 10, 0"></TextBox>
+        
+        <TextBlock Text="Podaj umiejętności zawodnika:" Margin="10, 10, 10, 0"/>
+        <TextBox Watermark="(np. aim, strategia, refleks)" Margin="10, 0, 10, 0"></TextBox>
+        
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Wybierz poziom strestu zawodnika:" Margin="10, 10, 10, 0"/>
+                <ComboBox ItemsSource="{Binding Options}" 
+                          SelectedItem="{Binding }" 
+                          Width="200" 
+                          Height="30" 
+                          Margin="10, 10, 10, 0"/>
+                
+            </StackPanel>
+            
+            
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Wybierz poziom zmęczenia zawodnika:" Margin="10, 10, 10, 0"/>
+                <ComboBox ItemsSource="{Binding Options2}" 
+                          SelectedItem="{Binding }" 
+                          Width="200" 
+                          Height="30" 
+                          Margin="10, 10, 10, 0"/>
+            </StackPanel>
+        </StackPanel>
+            
+        
+        <Button HorizontalAlignment="Center" Margin="10, 10, 10, 0">Dodaj zawodnika</Button>
+        
+        
+        <ListBox ItemsSource="{Binding Messages}" Width="300" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" Margin="0, 0, 0, 10">
+                        <TextBlock Text="{Binding Content}"
+                                   FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Info}"
+                                   FontSize="12" Foreground="Gray"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+        
+    </StackPanel>
 
 </Window>

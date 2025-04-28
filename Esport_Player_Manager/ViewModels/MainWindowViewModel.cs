@@ -1,8 +1,23 @@
-﻿namespace Esport_Player_Manager.ViewModels;
+﻿using System.Collections.ObjectModel;
+using Avalonia.Controls;
 
-public partial class MainWindowViewModel : ViewModelBase
+namespace Esport_Player_Manager.ViewModels;
+
+public partial class MainWindowViewModel 
 {
-#pragma warning disable CA1822 // Mark members as static
-    public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+
+    public ObservableCollection<string> Options { get; } =
+    [
+       "pierwszy poziom",
+       "drugi poziom",
+       "trzeci poziom",
+    ];
+    
+    public ObservableCollection<string> Options2 { get; } =
+    [
+        "pierwszy poziom",
+        "drugi poziom",
+        "trzeci poziom",
+    ];
+    
 }
